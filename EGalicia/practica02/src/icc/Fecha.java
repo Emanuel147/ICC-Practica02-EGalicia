@@ -336,8 +336,6 @@ public class Fecha{
       return true;
   }
 
-  // TODO validar fecha
-
   public static void main(String[] args){
   }
 }

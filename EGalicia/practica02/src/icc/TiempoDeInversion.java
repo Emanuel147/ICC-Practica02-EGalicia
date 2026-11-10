@@ -4,6 +4,7 @@ import java.util.Scanner;
  * Simulador de inversiones
  * A partir de una fecha inicial, fecha final y un monto, calcula el rendimiento al 12%.
  * Se asume que las fechas ingresadas son validas.
+ * Se asume que la fecha inicial es menor que la fecha final.
  * @author Galicia Rosas Emanuel Tonahuayoltzin
  * @version 1a edicion
 */
@@ -37,7 +38,7 @@ public class TiempoDeInversion{
       in.nextLine();
 
       System.out.println("Dias de la inversion: " + inicio.diferencia(fin));
-      System.out.println("Rendimiento 12%: " + (monto + monto * .12)); // TODO mensual o anual?
+      System.out.println("Rendimiento 12%: " + (monto * (.12/365) * inicio.diferencia(fin)));
       System.out.println("Desea hacer otra simulacion? y/n: ");
       String respuesta;
       respuesta = in.nextLine();
