@@ -1,7 +1,7 @@
 # ICC-Practica02-EGalicia
 
 - Autor: Galicia Rosas Emanuel Tonahuayoltzin
-- Introduccion a Ciencias de la Computacion
+- Introducción a Ciencias de la Computación
 - Profesor: Salvador López Mendoza
 - Ayudante: Yanahı́ Demerio Torres
 - Ayudante de Laboratorio: Rosa Victoria Villa Padilla
@@ -30,7 +30,7 @@ La clase Fecha es un manejador de fechas que crea objetos fechas e incluyen vari
 - Constructores: Incluye tres constructores (sin parametros, con dia/mes/año y con dia, año y el nombre del mes).
 - Acceso: getters y setters para los parametros de la fecha (dia, mes y año).
 - Calculadores: `agregarDias` (acepta dias negativos), `diasPasados`,  `fechaEnDias`.
-- Conversion: nombre del mes a numero y viceversa, `showDate`. Para mas informacion revisar [Documentacion javadoc](#Documentacion) 
+- Conversion: nombre del mes a numero y viceversa, `showDate`. Para mas informacion revisar [Documentacion javadoc](#Documentacion). 
 ### Caracteristicas:
 - Se asume que la entrada String de `mesNombre()` es valida (Mayuscula en la inicial)
 - Se asume que la entrada entera de `mesNombre()` es valida (rango 1-12).
@@ -41,16 +41,16 @@ La clase Fecha es un manejador de fechas que crea objetos fechas e incluyen vari
 ### Demo
 Como en el `main()` de Fecha no hay codigo, no imprime nada.
 ```shell
-❯ javac Fecha.java && java Fecha
+javac Fecha.java && java Fecha
 ```
 
 ---
 ## Clase TiempoDeInversion.java
 Esta clase es un simulador de inversiones. Da la bienvenida al usuario y le saluda, le pide un monto de inversion, una fecha inicial, una fecha final e imprime los dias de la inversion, el rendimiento de la inversion al 12%.
 ### Metodos:
-No incluye metodos adicionales. El programa esta contenido en el main(). Sin embargo, para manejar las fechas utiliza la clase Fecha, asi que es necesario tener la clase Fecha.java
+No incluye metodos adicionales. El programa esta contenido en el main(). Sin embargo, para manejar las fechas utiliza la clase Fecha, asi que es necesario tener la clase Fecha. Para mas informacion revisar [Documentacion javadoc](#Documentacion).
 ### Caracteristicas
-- Se asume que la fecha inicial es 'menor' que la fecha final
+- Se asume que la fecha inicial es 'menor' que la fecha final.
 - Se asume que el monto es positivo.
 - Al terminar de hacer la simulacion para salir del programa teclear 'n', para continuar 'y' u otra tecla.
 ### Compilar y Ejecutar
@@ -59,7 +59,7 @@ Para compilar `javac TiempoDeInversion.java` es necesario tener `Fecha.java`
 - Ejecutar: `java TiempoDeInversion`
 ### Demo
 ```shell
-❯ javac TiempoDeInversion.java && java TiempoDeInversion
+javac TiempoDeInversion.java && java TiempoDeInversion
 Hola, sea bienvenido a TiempoDeInversion
 Por favor, introduzca su nombre:
 Emanuel
@@ -85,8 +85,7 @@ n
 
 ## Documentacion
 El codigo esta documentado con el formato javadoc.
-Para obtener la documentacion de la clase Fecha:
-`javadoc -d docs Fecha.java`
-Para obtener la documentacion de la TiempoDeInversion.java
-`javadoc -d docs TiempoDeInversion.java`
-
+Para obtener la documentacion de ambas clases se utiliza el siguiente comando: 
+`javadoc -d docs Fecha.java TiempoDeInversion.java`
+- Ese comando crea un nuevo directorio `docs` en donde se guardará la documentacion.
+- Para ver la documentacion utilizamos un navegador y abrimos el `index.html` con el navegador de preferencia. Ejemplo: `zen docs/index.html`
